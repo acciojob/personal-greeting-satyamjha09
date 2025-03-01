@@ -3,14 +3,22 @@ import React, { useState } from "react";
 const Greeting = () => {
     const [name, setName] = useState("");
   return (
-    <div className="greeting-container">
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Personalized Greeting</h1>
       <input
         type="text"
+        placeholder="Enter your name..."
         value={name}
         onChange={(e) => setName(e.target.value)}
-        placeholder="Enter your name..."
+        style={{
+          padding: "8px",
+          fontSize: "16px",
+          marginBottom: "10px",
+          borderRadius: "5px",
+          border: "1px solid #ccc",
+        }}
       />
-      {name && <h2>Hello, {name}!</h2>}
+      <h2>{name && `Hello, ${name}!`}</h2>
     </div>
   )
 }

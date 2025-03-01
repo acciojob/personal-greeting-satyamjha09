@@ -9,7 +9,6 @@ const App = () => {
 
   return (
     <div className="greeting-container">
-       <h1> Personalized Greeting </h1>
        <Greeting />
     </div>
   )
