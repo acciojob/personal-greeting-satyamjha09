@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 
 const Greeting = () => {
-    const [name, setName] = useState("");
     
+    const [name, setName] = useState("");
+
 
   return (
+
     <div style={{ textAlign: "center", marginTop: "50px" }}>
+
       <h1>Personalized Greeting</h1>
+
       <input
         type="text"
         placeholder="Enter your name..."
@@ -21,7 +25,9 @@ const Greeting = () => {
           border: "1px solid #ccc",
         }}
       />
+
       <h2 data-cy="greeting-text">{name ? `Hello, ${name}!` : ""}</h2>
+
     </div>
   );
 };
