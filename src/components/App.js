@@ -5,7 +5,6 @@ import Greeting from "./Greeting";
 
 const App = () => {
 
-  const [name, setName] = useState("")
 
   return (
     <div className="greeting-container">
